@@ -255,7 +255,7 @@ export default function SignUp() {
               },
               {
                 name: "Contact",
-                link: "https://www.anuragpsarmah.me/#contact",
+                link: "https://pritam-panda.vercel.app/",
               },
             ]}
           />
@@ -272,7 +272,7 @@ export default function SignUp() {
               },
               {
                 name: "Contact",
-                link: "https://www.anuragpsarmah.me/#contact",
+                link: "https://pritam-panda.vercel.app/",
               },
             ]}
           />
