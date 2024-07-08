@@ -296,7 +296,7 @@ export default function Dashboard() {
                 >
                   <button className="shadow-[0_0_0_2px_#000000_inset] px-6 py-2 bg-black border-[1px] border-black dark:border-white dark:text-white text-black rounded-lg font-bold"
                  onClick={() => {
-                  window.open(`${processedURL}/${username}`);
+                  window.open(`${username}`);
                 }} >
                   
                     Copy
