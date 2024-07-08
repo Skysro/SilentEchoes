@@ -22,7 +22,7 @@ export default function About() {
             },
             {
               name: "Contact",
-              link: "https://pritam-panda.vercel.app/",
+              link: "https://pritam-panda.vercel.app/contact",
             },
           ]}
         ></FloatingNavMain>

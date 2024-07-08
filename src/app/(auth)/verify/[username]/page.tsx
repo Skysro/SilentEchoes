@@ -178,7 +178,7 @@ export default function Verify() {
               },
               {
                 name: "Contact",
-                link: "https://pritam-panda.vercel.app/",
+                link: "https://pritam-panda.vercel.app/contact",
               },
             ]}
           />
@@ -195,7 +195,7 @@ export default function Verify() {
               },
               {
                 name: "Contact",
-                link: "https://pritam-panda.vercel.app/",
+                link: "https://pritam-panda.vercel.app/contact",
               },
             ]}
           />

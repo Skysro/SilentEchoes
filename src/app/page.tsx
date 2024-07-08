@@ -6,7 +6,7 @@ import { FloatingNavMain } from "@/components/ui/floating-navbar-main";
 import Zoom from "@mui/material/Zoom";
 
 export default function Home() {
-  const wordsArray = ["Anonymous.", "Invisible.", "Shadowed.", "Veiled."];
+  const wordsArray = ["Silent", "Anonymous", "Invisible", "Shadowed", "Veiled", "Unseen"];
   const [zoomIn, setZoomIn] = useState<boolean>(true);
 
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             },
             {
               name: "Contact",
-              link: "https://pritam-panda.vercel.app/",
+              link: "https://pritam-panda.vercel.app/contact",
             },
           ]}
         ></FloatingNavMain>
@@ -35,8 +35,11 @@ export default function Home() {
             <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
               <span className="lg:text-[4rem] sm:text-[3rem] silentechoes">Silent Echoes</span>
               <br />
-              <span className="lg:text-[1.8rem] sizes">
-                Send your Echoes being Silent, Remain<FlipWords words={wordsArray} duration={3000}></FlipWords>
+              <span className="lg:text-[1.8rem] sizes" style={{ display: "block" }}>
+                Send your Echoes, "Being" : 
+              </span>
+              <span className="lg:text-[1.8rem] sizes" style={{ marginTop: "10px" }}>
+                <FlipWords words={wordsArray} duration={1500}></FlipWords>
               </span>
             </h1>
           </div>
