@@ -3,7 +3,7 @@ import {  Kode_Mono } from "next/font/google";
 import AuthProvider from "./context/AuthProvider";
 import "./globals.css";
 
-const inter = Kode_Mono({ subsets: ["latin"], weight: "400"});
+const inter = Kode_Mono({ subsets: ["latin"], weight: "400", display: 'swap', adjustFontFallback: false});
 
 export const metadata: Metadata = {
   title: "Silent Echoes",

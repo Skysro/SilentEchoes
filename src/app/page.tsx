@@ -36,7 +36,7 @@ export default function Home() {
               <span className="lg:text-[4rem] sm:text-[3rem] silentechoes">Silent Echoes</span>
               <br />
               <span className="lg:text-[1.8rem] sizes" style={{ display: "block" }}>
-                Send your Echoes, "Being" : 
+                Send your Echoes, Being : 
               </span>
               <span className="lg:text-[1.8rem] sizes" style={{ marginTop: "10px" }}>
                 <FlipWords words={wordsArray} duration={1500}></FlipWords>
