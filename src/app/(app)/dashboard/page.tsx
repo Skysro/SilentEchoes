@@ -189,7 +189,7 @@ export default function Dashboard() {
                 style={{ padding: "0.4rem" }}
                 className="relative flex space-x-[4px] items-center justify-center z-10 rounded-full bg-zinc-950 py-0.5 ring-1 ring-white/10 "
               >
-                <span>View Message</span>
+                <span>View Messages</span>
               </div>
               <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
             </button>
@@ -262,7 +262,7 @@ export default function Dashboard() {
                 }}
               />
               <FlipWordsConditional
-                words={["Nah. I am too sensitive!", "Yep. Bring it on!"]}
+                words={["Nope. I am a crybaby!", "Yoohoo!!. Bring it on baby, I can take a bullet"]}
                 condition={isChecked}
                 className="mt-2 text-xl text-white"
               />
@@ -294,7 +294,11 @@ export default function Dashboard() {
                     })
                   }
                 >
-                  <button className="shadow-[0_0_0_2px_#000000_inset] px-6 py-2 bg-black border-[1px] border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
+                  <button className="shadow-[0_0_0_2px_#000000_inset] px-6 py-2 bg-black border-[1px] border-black dark:border-white dark:text-white text-black rounded-lg font-bold"
+                 onClick={() => {
+                  window.open(`${processedURL}/${username}`);
+                }} >
+                  
                     Copy
                   </button>
                 </CopyToClipboard>
