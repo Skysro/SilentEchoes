@@ -13,6 +13,7 @@ import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FlipWordsConditional } from "@/components/ui/flip-words-conditional";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 export default function Dashboard() {
   const { data: session } = useSession();
@@ -262,7 +263,7 @@ export default function Dashboard() {
                 }}
               />
               <FlipWordsConditional
-                words={["Nope. I am a crybaby!", "Yoohoo!!. Bring it on baby, I can take a bullet"]}
+                words={["Nope. I am a crybaby!", "Yoohoo!!. Bring it on baby, hit me up."]}
                 condition={isChecked}
                 className="mt-2 text-xl text-white"
               />
@@ -299,7 +300,7 @@ export default function Dashboard() {
                   window.open(`${username}`);
                 }} >
                   
-                    Copy
+                    Copy & Open
                   </button>
                 </CopyToClipboard>
               </div>

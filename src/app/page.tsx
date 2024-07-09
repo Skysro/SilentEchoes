@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { HeroHighlight } from "@/components/ui/hero-highlight";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { FlipWords } from "@/components/ui/flip-words";
 import { FloatingNavMain } from "@/components/ui/floating-navbar-main";
 import Zoom from "@mui/material/Zoom";
@@ -39,7 +39,9 @@ export default function Home() {
                 Send your Echoes, Being : 
               </span>
               <span className="lg:text-[1.8rem] sizes" style={{ marginTop: "10px" }}>
+                <Highlight className="text-black dark:text-white">
                 <FlipWords words={wordsArray} duration={1500}></FlipWords>
+               </Highlight>
               </span>
             </h1>
           </div>

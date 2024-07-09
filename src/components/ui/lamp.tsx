@@ -24,8 +24,8 @@ export function Lamp() {
         }}
         className="flex flex-col mt-8 gap-3 bg-black dark:bg-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        <span>Ready to handle</span>
-        <span>criticism?</span>
+        <span>Ready to</span>
+        <span>take a bullet?</span>
       </motion.h1>
     </LampContainer>
   );
@@ -57,15 +57,15 @@ export const LampContainer = ({
           initial={{ opacity: 0.4, width: "15rem" }}
           whileInView={{ opacity: 0.8, width: "30rem" }}
           transition={{
-            delay: 0.3,
-            duration: 1.2,
+            delay: 0.5,
+            duration: 1.5,
             ease: "easeInOut",
           }}
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
             overflow: "visible !important",
           }}
-          className="bowlA absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-white via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
+          className="bowlA absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-violet-500 via-transparent to-transparent text-black [--conic-position:from_70deg_at_center_top]"
         >
           <div className="absolute  w-[100%] left-0 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
           <div className="absolute  w-[100rem] h-[100%] left-0  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
@@ -81,7 +81,7 @@ export const LampContainer = ({
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
-          className="bowlB absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-white to-transparent text-white [--conic-position:from_290deg_at_center_top]"
+          className="bowlB absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-violet-500 to-transparent text-black [--conic-position:from_290deg_at_center_top]"
         >
           <div className="absolute  w-40 h-[100%] right-0  bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
           <div className="absolute  w-[100%] right-0 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
