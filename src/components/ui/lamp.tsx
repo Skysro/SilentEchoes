@@ -12,12 +12,12 @@ export function Lamp() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           opacity: {
-            duration: 1,
+            duration: 0.5,
             ease: "easeInOut",
             keyframes: [0, 0.5, 1],
           },
           y: {
-            duration: 1.2,
+            duration: 0.8,
             ease: "easeInOut",
           },
           delay: 1,
@@ -54,11 +54,11 @@ export const LampContainer = ({
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
-          initial={{ opacity: 0.4, width: "15rem" }}
-          whileInView={{ opacity: 0.8, width: "30rem" }}
+          initial={{ opacity: 0, width: "15rem" }}
+          whileInView={{ opacity: 1, width: "30rem" }}
           transition={{
-            delay: 0.5,
-            duration: 1.5,
+            delay: 0.3,
+            duration: 0.8,
             ease: "easeInOut",
           }}
           style={{
@@ -71,11 +71,11 @@ export const LampContainer = ({
           <div className="absolute  w-[100rem] h-[100%] left-0  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0.4, width: "15rem" }}
-          whileInView={{ opacity: 0.8, width: "30rem" }}
+          initial={{ opacity: 0, width: "15rem" }}
+          whileInView={{ opacity: 1, width: "30rem" }}
           transition={{
             delay: 0.3,
-            duration: 1.2,
+            duration: 0.8,
             ease: "easeInOut",
           }}
           style={{
@@ -90,11 +90,11 @@ export const LampContainer = ({
         <div className="absolute top-1/2 z-50 h-20 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
         <div className="absolute inset-auto z-50 h-20 w-[28rem] -translate-y-1/2 rounded-full bg-white opacity-50 blur-3xl"></div>
         <motion.div
-          initial={{ width: "15rem" }}
-          whileInView={{ width: "30rem" }}
+          initial={{ opacity: 0, width: "15rem" }}
+          whileInView={{ opacity: 1, width: "30rem" }}
           transition={{
             delay: 0.3,
-            duration: 1.2,
+            duration: 0.8,
             ease: "easeInOut",
           }}
           className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-white "
