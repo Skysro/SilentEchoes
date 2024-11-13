@@ -24,7 +24,7 @@ export default function Home() {
             },
             {
               name: "Contact",
-              link: "https://pritam-panda.vercel.app/contact",
+              link: "https://pritampanda.vercel.app/contact",
             },
           ]}
         ></FloatingNavMain>
