@@ -19,7 +19,7 @@ export default function Verify() {
   const param = useParams<{ username: string }>();
   const [identifier, fromPage] = param.username.split("-");
   const router = useRouter();
-
+//use
   useEffect(() => {
     if (fromPage === "fromsignup") {
       toast("User registered successfully. Verify your email.", {
